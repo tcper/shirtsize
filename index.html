@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>衬衫Size收集</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+
+    <!-- Custom styles for this template -->
+    <link href="navbar.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">衬衫尺寸</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#0">S</a></li>
+              <li><a href="#1">M</a></li>
+              <li><a href="#2">L</a></li>
+              <li><a href="#3">XL</a></li>
+              <li><a href="#4">XXL</a></li>
+            </ul>
+            <!--
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
+              <li><a href="../navbar-static-top/">Static top</a></li>
+              <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+            </ul>
+            -->
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>衬衫Size收集</h1>
+        <p>服装企业真他妈傻逼啊，每个品牌的size规格都不一样，中国普遍用S,M,L来标尺寸。美国的衬衫和裤子就各种奇怪了，比如说levi's的牛仔裤就要一个腿长和一个腰围，而且都是英寸的，买衣服最好去店里量一下，这里收集一些尺方便广大码农同学海淘。</p>
+        <p>
+          目前我买的主要是优衣库, Tommy Hilfiger, Brooks Brother, Ralph Lauren
+        </p>
+        <p>
+          国外的衬衫主要分regular(classic), slim, skinny 等，slim相对更瘦身，肚子大的慎买。这里尺寸只收集regular的。
+        </p>
+      </div>
+
+      <div class="jumbotron" id="sizeContent">
+        <h2>Size列表</h2>
+        <table class="table">
+          <thead>
+          <tr>
+            <td>品牌</td>
+            <td>后肩衣长</td>
+            <td>胸围</td>
+            <td>肩宽</td>
+            <td>身宽</td>
+            <td>袖长</td>
+            <td>领围</td>
+            <td>单位</td>
+            <td>风格</td>
+          </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+      </div>
+
+    </div> <!-- /container -->
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    var itemList =[
+      {
+        uniqlo: {
+          name: "优衣库",
+          long: 74,
+          shoulder: 43.5,
+          body:49.5,
+          chest: "-",
+          arm: 59.5,
+          neck: 38,
+          unit:"cm"
+        },
+        vancl: {
+          name:"凡客",
+          long: 74,
+          shoulder: 43,
+          body: "-",
+          chest: 98,
+          arm: 59.5,
+          neck: 38,
+          unit: "cm"
+        },
+        brooks: {
+          name:"Brooks Brother",
+          long: "-",
+          shoulder: "-",
+          body: "-",
+          chest: "34 - 36",
+          arm: 33.25,
+          neck: "14 - 14.5",
+          unit: "inch"
+        },
+        tommy: {
+          name: "Tommy Hilfiger",
+          long: "-",
+          shoulder: "-",
+          body: "-",
+          chest: 45,
+          arm: 35,
+          neck: 16,
+          style: "classic",
+          unit: "inch"
+        }
+      },
+//---------------------------------------------------------
+      {
+        uniqlo: {
+          name: "优衣库",
+          long: 76,
+          shoulder: 45,
+          body:52.5,
+          chest: "-",
+          arm: 61.5,
+          neck: 40,
+          unit:"cm"
+        },
+        vancl: {
+          name:"凡客",
+          long: 76,
+          shoulder: 44,
+          body: "-",
+          chest: 102,
+          arm: 60.5,
+          neck: 39.5,
+          unit: "cm"
+        },
+        brooks: {
+          name:"Brooks Brother",
+          long: "-",
+          shoulder: "-",
+          body: "-",
+          chest: "38 - 40",
+          arm: 34.75,
+          neck: "15 - 15.5",
+          unit: "inch"
+        },
+        tommy: {
+          name: "Tommy Hilfiger",
+          long: "-",
+          shoulder: "-",
+          body: "-",
+          chest: 47,
+          arm: 35.5,
+          neck: 17,
+          style: "classic",
+          unit: "inch"
+        }
+      },
+//---------------------------------------------------------
+      {
+        uniqlo: {
+          name: "优衣库",
+          long: 78,
+          shoulder: 46.5,
+          body:55.5,
+          chest: "-",
+          arm: 63,
+          neck: 42,
+          unit:"cm"
+        },
+        vancl: {
+          name:"凡客",
+          long: 78,
+          shoulder: 45,
+          body: "-",
+          chest: 107,
+          arm: 62.5,
+          neck: 41,
+          unit: "cm"
+        },
+        brooks: {
+          name:"Brooks Brother",
+          long: "-",
+          shoulder: "-",
+          body: "-",
+          chest: "42 - 44",
+          arm: 35.75,
+          neck: "16 - 16.5",
+          unit: "inch"
+        },
+        tommy: {
+          name: "Tommy Hilfiger",
+          long: "-",
+          shoulder: "-",
+          body: "-",
+          chest: 49,
+          arm: 36.5,
+          neck: 18,
+          style: "classic",
+          unit: "inch"
+        }
+      },
+//---------------------------------------------------------
+      {
+        uniqlo: {
+          name: "优衣库",
+          long: 81,
+          shoulder: 48.5,
+          body:59.5,
+          chest: "-",
+          arm: 64.5,
+          neck: 44,
+          unit:"cm"
+        },
+        vancl: {
+          name:"凡客",
+          long: 80,
+          shoulder: 46,
+          body: "-",
+          chest: 112,
+          arm: 64.5,
+          neck: 42.5,
+          unit: "cm"
+        },
+        brooks: {
+          name:"Brooks Brother",
+          long: "-",
+          shoulder: "-",
+          body: "-",
+          chest: "46 - 48",
+          arm: 36.25,
+          neck: "17 - 17.5",
+          unit: "inch"
+        },
+        tommy: {
+          name: "Tommy Hilfiger",
+          long: "-",
+          shoulder: "-",
+          body: "-",
+          chest: 52,
+          arm: 37.5,
+          neck: 19.5,
+          style: "classic",
+          unit: "inch"
+        }
+      },
+
+    ];
+
+    var contentDOM = $("#sizeContent");
+
+    function showContent(index) {
+      var data = itemList[index];
+
+      for(var key in data) {
+        var sizeList = data[key];
+
+        if (!sizeList["name"]) {
+          return;
+        }
+        
+        var htmlContent = ["<tr><td>", 
+                          sizeList["name"] || "-",
+                          "</td><td>",
+                          sizeList["long"] || "-",
+                          "</td><td>",
+                          sizeList["chest"] || "-",
+                          "</td><td>",
+                          sizeList["shoulder"] || "-",
+                          "</td><td>",
+                          sizeList["body"] || "-",
+                          "</td><td>",
+                          sizeList["arm"] || "-",
+                          "</td><td>",
+                          sizeList["neck"] || "-",
+                          "</td><td>",
+                          sizeList["unit"] || "-",
+                          "</td><td>",
+                          sizeList["style"] || "-",
+                          "</td><td>",
+                          "</tr>"
+                          ]
+        $("#sizeContent table tbody").append(htmlContent.join(""));
+      }
+    }
+    $("#sizeContent h2").text("Size列表(S)");
+    showContent(0);
+
+    $(".navbar-nav li").hover(function(){
+      $(this).addClass("active");
+      ;
+      $("#sizeContent table tbody").empty();
+
+      $("#sizeContent h2").text("Size列表(" + $(this).text() + ")");
+
+      var params = $($(this).context.firstChild).attr("href");
+      var index = parseInt(params.charAt(1));
+      showContent(index);
+      
+    },
+    function(){
+      $(this).removeClass("active");
+    });
+    </script>
+  </body>
+</html>
